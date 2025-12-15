@@ -4,35 +4,63 @@
   <meta charset="UTF-8">
   <title>Stareyelashes</title>
   <link rel="icon" type="image/png" href="images/logoPrincipal.png">
+  
   <!-- CSS -->
   <link rel="stylesheet" href="diseño.css">
 </head>
-
 <body>
 
   <!-- =========================
        HEADER / NAVIGATION
   ========================= -->
-  <header class="header">
-    <div class="logo">
-        <!-- LOGO IMAGE -->
-        <img src="images/logo.jpg" alt="Stareyelashes logo" class="logo-img">
+<header class="header">
+  <div class="logo">
+    <!-- TODO EL BLOQUE DEL LOGO Y TEXTO ENVUELTO EN UN LINK -->
+    <a href="PaginaPrincipal.html" class="logo-link" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+      <!-- LOGO IMAGE -->
+      <img src="images/logo.jpg" alt="Stareyelashes logo" class="logo-img">
 
-        <!-- BRAND TEXT -->
-        <div class="brand-text"></div>
-            <h1>Stareyelashes</h1
-        </div>
+      <!-- BRAND TEXT -->
+      <div class="brand-text">
+        <h1 style="margin:0; color:inherit;">Stareyelashes</h1>
+      </div>
+    </a>
+  </div>
+
+  <!-- NAVIGATION LINKS -->
+  <nav class="nav">
+    <a href="PaginaPrincipal.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Blog</a>
+    <a href="contactanos.html">Contact Us</a>
+    <a href="#">Shop</a>
+  </nav>
+</header>
+
+
+  <!-- =========================
+       SLIDER / IMÁGENES
+  ========================= -->
+  <section class="slider">
+    <div class="slides">
+      <img src="images/tienda/local-3.jpg" class="active" alt="Slider 1">
+      <img src="images/tienda/local-1.jpg" alt="Slider 2">
+      <img src="images/tienda/local-3.jpg" alt="Slider 3">
+      <img src="images/tienda/local-4.jpg" alt="Slider 4">
     </div>
 
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Shop</a>
-    </nav>
-  </header>
+    <!-- Flechas -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
 
+    <!-- Puntos -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
 
   <!-- =========================
        PRODUCTS SECTION
@@ -63,7 +91,6 @@
 
   </main>
 
-
   <!-- =========================
        NEWSLETTER SECTION
   ========================= -->
@@ -90,26 +117,21 @@
     </div>
   </section>
 
+  <!-- =========================
+       MULTI-LOCATION MAP
+  ========================= -->
+  <section class="map">
+    <iframe 
+      src="https://www.google.com/maps/d/u/0/embed?mid=16LInNhR2d-tbRnC_L7HCWZkcPVLRNqk&ehbc=2E312F&noprof=1"
+      width="100%"
+      height="400"
+      style="border:0;"
+      loading="lazy">
+    </iframe>
+  </section>
 
-<!-- =========================
-     MULTI-LOCATION MAP
-========================= -->
-<section class="map">
-  <!-- MAPA DE TODOS LOS LOCALES -->
-  <iframe 
-    src="https://www.google.com/maps/d/u/0/embed?mid=16LInNhR2d-tbRnC_L7HCWZkcPVLRNqk&ehbc=2E312F&noprof=1"
-    width="100%"
-    height="400"
-    style="border:0;"
-    loading="lazy">
-  </iframe>
-</section>
-
-
-<!-- GOOGLE MAPS SCRIPT -->
-<script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
-
-
+  <!-- GOOGLE MAPS SCRIPT -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
 
   <!-- =========================
        FOOTER
@@ -127,7 +149,6 @@
       © 2025 Stareyelashes — All rights reserved
     </p>
   </footer>
-
 
   <!-- =========================
        JAVASCRIPT

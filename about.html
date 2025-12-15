@@ -3,116 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us | Stareyelashes</title>
+  <link rel="icon" type="image/png" href="images/logoPrincipal.png">
 
   <!-- CSS -->
   <link rel="stylesheet" href="diseño.css">
 </head>
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-<header class="header">
+  <!-- =========================
+       HEADER / NAVIGATION
+       Contiene el logo y los enlaces principales de navegación
+  ========================== -->
+  <header class="header">
     <div class="logo">
-        <!-- LOGO IMAGE -->
-        <img src="images/logo.jpg" alt="Stareyelashes logo" class="logo-img">
+      <!-- LOGO IMAGE -->
+      <img src="images/logo.jpg" alt="Stareyelashes logo" class="logo-img">
 
-        <!-- BRAND TEXT -->
-        <div class="brand-text"></div>
-            <h1>Stareyelashes</h1
-        </div>
+      <!-- BRAND TEXT -->
+      <div class="brand-text">
+        <h1>Stareyelashes</h1>
+      </div>
     </div>
 
-  <nav class="nav">
-    <!-- ACA VA HOME -->
-    <a href="PaginaPrincipal.html">Home</a>
+    <!-- NAVIGATION LINKS -->
+    <nav class="nav">
+      <a href="PaginaPrincipal.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header>
 
-    <!-- ACA VA ABOUT -->
-    <a href="about.html">About</a>
+  <!-- =========================
+       ABOUT US SECTION
+       Contiene texto sobre la marca y su misión, y secciones de imágenes decorativas
+  ========================== -->
+  <section class="about">
 
-    <!-- ACA VA BLOG -->
-    <a href="blog.html">Blog</a>
+    <!-- TEXTO SOBRE LA MARCA -->
+    <div class="about-content">
+      <h2 class="about-title">ABOUT US</h2>
 
-    <!-- ACA VA CONTACT -->
-    <a href="contact.html">Contact Us</a>
+      <p class="about-text">
+        We are a beauty brand dedicated to enhancing the presence, confidence,
+        and elegance of women through lashes, nails, and beauty essentials.
+        Our mission is to help every woman feel seen, cared for, and beautiful,
+        even when time or knowledge may be limited.
+      </p>
 
-    <!-- ACA VA SHOP -->
-    <a href="shop.html">Shop</a>
-  </nav>
-</header>
+      <p class="about-text">
+        We believe true beauty already exists — our role is simply to remove
+        the dust that hides the diamond beneath. That’s why we focus on trusted,
+        high-quality products and a team that genuinely listens, understands,
+        and values each client’s unique beauty.
+      </p>
 
-<!-- =========================
-     ABOUT US SECTION
-========================= -->
-<section class="about">
-
-  <div class="about-content">
-    <h2 class="about-title">ABOUT US</h2>
-
-    <p class="about-text">
-      We are a beauty brand dedicated to enhancing the presence, confidence,
-      and elegance of women through lashes, nails, and beauty essentials.
-      Our mission is to help every woman feel seen, cared for, and beautiful,
-      even when time or knowledge may be limited.
-    </p>
-
-    <p class="about-text">
-      We believe true beauty already exists — our role is simply to remove
-      the dust that hides the diamond beneath. That’s why we focus on trusted,
-      high-quality products and a team that genuinely listens, understands,
-      and values each client’s unique beauty.
-    </p>
-
-    <p class="about-text">
-      Our brand is created for women who want to highlight their beauty with
-      elegance, care, and presence in the world.
-    </p>
-  </div>
-
-  <!-- IMAGE SHAPES -->
-  <div class="about-images">
-    <div class="image-diamond">
-      <img src="images/about/about-1.jpg" alt="Beauty detail">
+      <p class="about-text">
+        Our brand is created for women who want to highlight their beauty with
+        elegance, care, and presence in the world.
+      </p>
     </div>
 
-    <div class="image-circle">
-      <img src="images/about/about-2.jpg" alt="Beauty moment">
+    <!-- IMÁGENES CON FORMAS DECORATIVAS -->
+    <div class="about-images">
+      <!-- IMAGEN DIAMANTE -->
+      <div class="image-diamond">
+        <img src="images/about/about-1.jpg" alt="Beauty detail">
+      </div>
+
+      <!-- IMAGEN CIRCULAR -->
+      <div class="image-circle">
+        <img src="images/about/about-2.jpg" alt="Beauty moment">
+      </div>
     </div>
-  </div>
 
-</section>
+  </section>
 
-<!-- =========================
-     MULTI-LOCATION MAP
-========================= -->
-<section class="map">
-  <!-- MAPA DE TODOS LOS LOCALES -->
-  <iframe 
-    src="https://www.google.com/maps/d/u/0/embed?mid=16LInNhR2d-tbRnC_L7HCWZkcPVLRNqk&ehbc=2E312F&noprof=1"
-    width="100%"
-    height="400"
-    style="border:0;"
-    loading="lazy">
-  </iframe>
-</section>
+  <!-- =========================
+       MULTI-LOCATION MAP
+       Muestra los locales de la marca en un mapa embebido de Google
+  ========================== -->
+  <section class="map">
+    <iframe 
+      src="https://www.google.com/maps/d/u/0/embed?mid=16LInNhR2d-tbRnC_L7HCWZkcPVLRNqk&ehbc=2E312F&noprof=1"
+      width="100%"
+      height="400"
+      style="border:0;"
+      loading="lazy">
+    </iframe>
+  </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
-<footer class="footer">
-  <p>FOLLOW US ON SOCIAL MEDIA</p>
+  <!-- =========================
+       FOOTER
+       Información de redes sociales y derechos de autor
+  ========================== -->
+  <footer class="footer">
+    <p>FOLLOW US ON SOCIAL MEDIA</p>
 
-  <div class="social">
-    <!-- ACA VAN TUS LINKS -->
+    <div class="social">
       <a href="https://www.instagram.com/star.eyelashes.extensions/?hl=es" target="_blank">Instagram</a>
       <a href="https://www.facebook.com/star.eyelashes.extensions/?ref=_xav_ig_profile_page_web#" target="_blank">Facebook</a>
       <a href="https://www.tiktok.com/@stareyelashesextensions" target="_blank">TikTok</a>
-  </div>
+    </div>
 
-  <p class="copy">
-    © 2025 Stareyelashes — All rights reserved
-  </p>
-</footer>
+    <p class="copy">
+      © 2025 Stareyelashes — All rights reserved
+    </p>
+  </footer>
 
 </body>
 </html>

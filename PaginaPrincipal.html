@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>About Us | Stareyelashes</title>
+  <title>Stareyelashes</title>
   <link rel="icon" type="image/png" href="images/logoPrincipal.png">
-
+  
   <!-- CSS -->
   <link rel="stylesheet" href="diseño.css">
 </head>
@@ -12,8 +12,7 @@
 
   <!-- =========================
        HEADER / NAVIGATION
-       Contiene el logo y los enlaces principales de navegación
-  ========================== -->
+  ========================= -->
 <header class="header">
   <div class="logo">
     <!-- TODO EL BLOQUE DEL LOGO Y TEXTO ENVUELTO EN UN LINK -->
@@ -28,65 +27,108 @@
     </a>
   </div>
 
-    <!-- NAVIGATION LINKS -->
-    <nav class="nav">
-      <a href="PaginaPrincipal.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contactanos.html">Contact Us</a>
-      <a href="shop.html">Shop</a>
-    </nav>
-  </header>
+  <!-- NAVIGATION LINKS -->
+  <nav class="nav">
+    <a href="PaginaPrincipal.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Blog</a>
+    <a href="contactanos.html">Contact Us</a>
+    <a href="shop.html">Shop</a>
+  </nav>
+</header>
+
 
   <!-- =========================
-       ABOUT US SECTION
-       Contiene texto sobre la marca y su misión, y secciones de imágenes decorativas
-  ========================== -->
-  <section class="about">
-
-    <!-- TEXTO SOBRE LA MARCA -->
-    <div class="about-content">
-      <h2 class="about-title">ABOUT US</h2>
-
-      <p class="about-text">
-        We are a beauty brand dedicated to enhancing the presence, confidence,
-        and elegance of women through lashes, nails, and beauty essentials.
-        Our mission is to help every woman feel seen, cared for, and beautiful,
-        even when time or knowledge may be limited.
-      </p>
-
-      <p class="about-text">
-        We believe true beauty already exists — our role is simply to remove
-        the dust that hides the diamond beneath. That’s why we focus on trusted,
-        high-quality products and a team that genuinely listens, understands,
-        and values each client’s unique beauty.
-      </p>
-
-      <p class="about-text">
-        Our brand is created for women who want to highlight their beauty with
-        elegance, care, and presence in the world.
-      </p>
+       SLIDER / IMÁGENES
+  ========================= -->
+  <section class="slider">
+    <div class="slides">
+      <img src="images/tienda/cara.jpg" class="active" alt="Slider 1">
+      <img src="images/tienda/local-1.jpg" alt="Slider 2">
+      <img src="images/tienda/local-3.jpg" alt="Slider 3">
+      <img src="images/tienda/local-4.jpg" alt="Slider 4">
     </div>
 
-    <!-- IMÁGENES CON FORMAS DECORATIVAS -->
-    <div class="about-images">
-      <!-- IMAGEN DIAMANTE -->
-      <div class="image-diamond">
-        <img src="images/about/about-1.jpg" alt="Beauty detail">
-      </div>
+    <!-- Flechas -->
+    <button class="prev">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
 
-      <!-- IMAGEN CIRCULAR -->
-      <div class="image-circle">
-        <img src="images/about/about-2.jpg" alt="Beauty moment">
-      </div>
+    <button class="next">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- Puntos -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- =========================
+       PRODUCTS SECTION
+  ========================= -->
+  <main class="contenedor">
+
+    <!-- PRODUCT 1 -->
+    <a href="labial.html" class="producto-link">
+      <section class="producto">
+        <img src="images/productos/labial-rosa.jpg" alt="Pink Lipstick">
+        <h2>Pink Lipstick</h2>
+        <p>Natural soft color</p>
+        <span class="precio">$15</span>
+        <button class="btn">Add to cart</button>
+      </section>
+    </a>
+
+    <!-- PRODUCT 2 -->
+    <a href="crema.html" class="producto-link">
+      <section class="producto">
+        <img src="images/productos/crema-facial.jpg" alt="Face Cream">
+        <h2>Face Cream</h2>
+        <p>Deep hydration</p>
+        <span class="precio">$25</span>
+        <button class="btn">Add to cart</button>
+      </section>
+    </a>
+
+  </main>
+
+  <!-- =========================
+       NEWSLETTER SECTION
+  ========================= -->
+  <section class="newsletter">
+    <h2 class="newsletter-title">
+      GET EXCLUSIVE OFFERS & BEAUTY ALERTS
+    </h2>
+
+    <p class="newsletter-subtitle">
+      Be the first to know about discounts, new arrivals, and seasonal events.
+    </p>
+
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email address">
+      <button>Send</button>
     </div>
 
+    <!-- BUSINESS INFO -->
+    <div class="info">
+      <p><strong>Address:</strong> 22 Rue de Courcelles Gate 21, Coteau-du-Lac, Quebec J0P 1B0, Canadá</p>
+      <p><strong>Mail:</strong> Stareyelashes.inc@gmail.com</p>
+      <p><strong>Phone:</strong> +5146902293</p>
+      <p><strong>Business Hours:</strong> Mon. - Sun.: 10:00 am - 6:00pm</p>
+    </div>
   </section>
 
   <!-- =========================
        MULTI-LOCATION MAP
-       Muestra los locales de la marca en un mapa embebido de Google
-  ========================== -->
+  ========================= -->
   <section class="map">
     <iframe 
       src="https://www.google.com/maps/d/u/0/embed?mid=16LInNhR2d-tbRnC_L7HCWZkcPVLRNqk&ehbc=2E312F&noprof=1"
@@ -97,10 +139,12 @@
     </iframe>
   </section>
 
+  <!-- GOOGLE MAPS SCRIPT -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+
   <!-- =========================
        FOOTER
-       Información de redes sociales y derechos de autor
-  ========================== -->
+  ========================= -->
   <footer class="footer">
     <p>FOLLOW US ON SOCIAL MEDIA</p>
 
@@ -114,6 +158,11 @@
       © 2025 Stareyelashes — All rights reserved
     </p>
   </footer>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+  <script src="funciones.js"></script>
 
 </body>
 </html>

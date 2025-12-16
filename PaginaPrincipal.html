@@ -39,10 +39,10 @@
   ========================= -->
   <section class="slider">
     <div class="slides">
-      <img src="images/tienda/cara.jpg" class="active" alt="Slider 1">
-      <img src="images/tienda/local-1.jpg" alt="Slider 2">
-      <img src="images/tienda/local-3.jpg" alt="Slider 3">
-      <img src="images/tienda/local-4.jpg" alt="Slider 4">
+      <img src="images/PaginaPrincipal/cara.jpg" class="active" alt="Slider 1">
+      <img src="images/PaginaPrincipal/local-1.jpg" alt="Slider 2">
+      <img src="images/PaginaPrincipal/local-3.jpg" alt="Slider 3">
+      <img src="images/PaginaPrincipal/local-4.jpg" alt="Slider 4">
     </div>
 
     <!-- Flechas -->
@@ -67,73 +67,72 @@
     </div>
   </section>
 
-<!-- =========================
-     COMPANY BODY / ABOUT SERVICES
-========================= -->
-<section class="company-body">
+  <!-- =========================
+       COMPANY BODY / ABOUT SERVICES
+  ========================= -->
+  <section class="company-body">
 
-  <!-- ROW 1 -->
-  <div class="company-row">
-    <div class="company-image">
-      <img src="images/tienda/WhatsApp Image 2025-12-14 at 23.53.33_018322ff.jpg" alt="Professional lash studio">
+    <!-- ROW 1 -->
+    <div class="company-row">
+      <div class="company-image">
+        <img src="images/PaginaPrincipal/imagen1.jpg" alt="Professional lash studio">
+      </div>
+
+      <div class="company-text">
+        <span class="company-tag">Our Craft</span>
+        <h2>Professional Lash Services</h2>
+        <p>
+          At Stareyelashes, we provide high-end eyelash extension services focused on
+          enhancing natural beauty with precision and care.
+        </p>
+        <p>
+          Each set is customized to suit facial features, eye shape, and lifestyle.
+        </p>
+      </div>
     </div>
 
-    <div class="company-text">
-      <span class="company-tag">Our Craft</span>
-      <h2>Professional Lash Services</h2>
-      <p>
-        At Stareyelashes, we provide high-end eyelash extension services focused on
-        enhancing natural beauty with precision and care.
-      </p>
-      <p>
-        Each set is customized to suit facial features, eye shape, and lifestyle.
-      </p>
-    </div>
-  </div>
+    <!-- ROW 2 -->
+    <div class="company-row reverse">
+      <div class="company-image">
+        <img src="images/PaginaPrincipal/imagen2.jpg" alt="Eyelash extension close up">
+      </div>
 
-  <!-- ROW 2 -->
-  <div class="company-row reverse">
-    <div class="company-image">
-      <img src="images/tienda/How_to_create_seeless_instagrm_carasel_posts_1200_x_800_px_-3.jpg" alt="Eyelash extension close up">
-    </div>
-
-    <div class="company-text">
-      <span class="company-tag">Aftercare</span>
-      <h2>Education & Lash Care</h2>
-      <p>
-        We guide our clients through proper aftercare routines to ensure long-lasting
-        results and healthy natural lashes.
-      </p>
-      <p>
-        Small habits make a big difference in lash retention and comfort.
-      </p>
-    </div>
-  </div>
-
-  <!-- ROW 3 -->
-  <div class="company-row">
-    <div class="company-image">
-      <img src="images/tienda/Screenshot 2025-12-15 222106.png" alt="Luxury beauty care experience">
+      <div class="company-text">
+        <span class="company-tag">Aftercare</span>
+        <h2>Education & Lash Care</h2>
+        <p>
+          We guide our clients through proper aftercare routines to ensure long-lasting
+          results and healthy natural lashes.
+        </p>
+        <p>
+          Small habits make a big difference in lash retention and comfort.
+        </p>
+      </div>
     </div>
 
-    <div class="company-text">
-      <span class="company-tag">Maintenance</span>
-      <h2>Appointments & Retouches</h2>
-      <p>
-        Regular maintenance every 2–3 weeks keeps lashes balanced, fresh,
-        and beautifully styled.
-      </p>
-      <p>
-        Our team is always available to answer questions and provide guidance.
-      </p>
+    <!-- ROW 3 -->
+    <div class="company-row">
+      <div class="company-image">
+        <img src="images/PaginaPrincipal/imagen3.png" alt="Luxury beauty care experience">
+      </div>
+
+      <div class="company-text">
+        <span class="company-tag">Maintenance</span>
+        <h2>Appointments & Retouches</h2>
+        <p>
+          Regular maintenance every 2–3 weeks keeps lashes balanced, fresh,
+          and beautifully styled.
+        </p>
+        <p>
+          Our team is always available to answer questions and provide guidance.
+        </p>
+      </div>
     </div>
-  </div>
 
-</section>
-
+  </section>
 
   <!-- =========================
-       NEWSLETTER SECTION
+       NEWSLETTER / EMAIL EVENTS
   ========================= -->
   <section class="newsletter">
     <h2 class="newsletter-title">GET EXCLUSIVE OFFERS & BEAUTY ALERTS</h2>
@@ -141,10 +140,26 @@
       Be the first to know about discounts, new arrivals, and seasonal events.
     </p>
 
-    <div class="newsletter-form">
-      <input type="email" placeholder="Enter your email address">
-      <button>Send</button>
-    </div>
+    <!-- Formulario Newsletter / Email Events -->
+    <form
+      name="newsletter-events"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="newsletter-form"
+    >
+      <!-- Hidden field obligatorio para Netlify -->
+      <input type="hidden" name="form-name" value="newsletter-events">
+
+      <!-- Anti-spam -->
+      <p hidden>
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
+
+      <!-- Input correo -->
+      <input type="email" name="email" placeholder="Enter your email address" required>
+      <button type="submit">Send</button>
+    </form>
 
     <!-- BUSINESS INFO -->
     <div class="info">

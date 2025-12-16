@@ -5,21 +5,20 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #1f1a1d;   /* fondo oscuro general */
-  color: #f5e9ee;              /* color principal del texto */
+  color: #e6cbd7;              /* color principal del texto */
 }
 
 /* =========================
-   2. CABECERA (HEADER)
+   2. HEADER / NAVIGATION
 ========================= */
 .header {
-  background-color: #2a2227;    /* header oscuro */
+  background-color: #2a2227;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* LOGO */
 .logo {
   display: flex;
   align-items: center;
@@ -31,18 +30,37 @@ body {
   height: 65px;
   border-radius: 60%;
   object-fit: cover;
-  background-color: #5a2a4a;   /* azul/rosa consistente con la paleta */
+  background-color: #5a2a4a;
   padding: 2px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .brand-text h1 {
   margin: 0;
   font-size: 22px;
-  color: #5a2a4a;              /* mismo color que el logo */
+  color: #f4a6c1;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s;
 }
 
-/* NAVEGACIÓN */
+.brand-text h1:hover {
+  color: #e75480;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
 .nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -53,7 +71,7 @@ body {
 }
 
 .nav a:hover {
-  color: #e75480;              /* rosado vibrante */
+  color: #e75480;
 }
 
 /* =========================
@@ -72,7 +90,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F05D92;    /* rosado oscuro */
+  background-color: #2a2227;
 }
 
 .slides img {
@@ -87,7 +105,6 @@ body {
   display: block;
 }
 
-/* FLECHAS */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -113,7 +130,6 @@ body {
 .prev { left: 15px; }
 .next { right: 15px; }
 
-/* Puntos del slider */
 .dots {
   position: absolute;
   bottom: 15px;
@@ -132,7 +148,7 @@ body {
 }
 
 .dot.active {
-  background-color: white;
+  background-color: #f4a6c1;
 }
 
 /* =========================
@@ -178,6 +194,7 @@ body {
 .producto h2 {
   font-size: 16px;
   margin: 10px 0 5px;
+  color: #f4a6c1;
 }
 
 .producto p {
@@ -192,7 +209,6 @@ body {
   color: #e75480;
 }
 
-/* BOTONES */
 .btn {
   background-color: #e75480;
   border: none;
@@ -235,6 +251,60 @@ body {
 }
 
 /* =========================
+   NEWSLETTER FORM STYLING
+========================= */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 14px 20px;
+  border: 2px solid #5a2a4a;
+  border-radius: 30px;
+  background-color: #2a2227;
+  color: #f5e9ee;
+  font-size: 16px;
+  width: 300px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: #cbb2bc;
+  font-style: italic;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: #e75480;
+  box-shadow: 0 6px 25px rgba(231, 84, 128, 0.5);
+  background-color: #3a2d35;
+}
+
+.newsletter-form button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #e75480, #f4a6c1);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.newsletter-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
    7. MAPA
 ========================= */
 #map {
@@ -266,7 +336,7 @@ body {
 }
 
 .footer .social a:hover {
-  color: #ffffff;
+  color: #f4a6c1;
 }
 
 .copy {
@@ -361,7 +431,7 @@ body {
   letter-spacing: 3px;
   margin-bottom: 20px;
   color: #f4a6c1;
-  font-family: 'Bloomy Script', cursive; /* fuente especial para título */
+  font-family: 'Bloomy Script', cursive;
 }
 
 .contact-subtitle {
@@ -369,7 +439,7 @@ body {
   line-height: 1.8;
   margin-bottom: 40px;
   color: #e6cbd7;
-  font-family: Helvetica, Arial, sans-serif; /* fuente limpia para subtítulo */
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .contact-form {
@@ -422,3 +492,182 @@ body {
 .contact-info strong {
   color: #f4a6c1;
 }
+/* =========================
+   COMPANY BODY
+========================= */
+
+.company-body {
+  background: linear-gradient(180deg, #1b1518, #261c21);
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.company-row {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.company-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.company-image {
+  flex: 1;
+}
+
+.company-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+
+.company-text {
+  flex: 1;
+}
+
+.company-tag {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #d6a6b8;
+  margin-bottom: 14px;
+}
+
+.company-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #f5e9ee;
+}
+
+.company-text p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #d1c3c8;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   POST BLOG SECTION
+========================= */
+
+.post-container {
+  max-width: 950px;   /* MÁS ANCHO */
+  margin: 90px auto 80px;
+  padding: 0 16px;
+}
+
+/* CARD */
+.post-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  background-color: #2a2227;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+/* IMAGEN (NO SE DEFORMA) */
+.post-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;   /* MENOS ALTO */
+  object-fit: cover;  /* CLAVE: no se estira */
+}
+
+/* TEXTO */
+.post-info {
+  padding: 34px 36px; /* MENOS VERTICAL */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* TAG */
+.post-tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #e75480;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* TÍTULO */
+.post-info h1 {
+  font-size: 25px;
+  color: #f5e9ee;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+/* META */
+.post-meta {
+  font-size: 12px;
+  color: #bfa6b0;
+  margin-bottom: 18px;
+}
+
+/* TEXTO */
+.post-info p {
+  font-size: 14.5px;
+  color: #cbb2bc;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+/* ACCIONES */
+.post-actions {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.like-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #f5e9ee;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.like-btn:hover {
+  transform: scale(1.15);
+  color: #e75480;
+}
+
+#like-count {
+  font-size: 14px;
+  color: #cbb2bc;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+  .post-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .post-image img {
+    min-height: 260px;
+  }
+
+  .post-info {
+    padding: 32px 26px;
+  }
+
+  .post-info h1 {
+    font-size: 22px;
+  }
+}
+
+
